@@ -34,7 +34,7 @@
 <h1>Exercício 3</h1>
 <p> 3)	Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.</P>
 <form method="get">
-	<button name="botaoEx3" type="submit" onClick="verNota()">Bora ver as notas!</button>
+	<button name="botaoEx3" type="submit">Bora ver as notas!</button>
   </div>
 </form>
 <hr>
@@ -162,6 +162,29 @@ function verMes(){
 	else if ( $mes == 12 ) {
 		echo 'O mês ', $mes, ' é o mês de Dezembro, seu canalha';
 	}
+}
+
+if ($_GET) {
+	if (isset($_GET['botaoEx3'])) {
+		verNotinha();
+
+}}
+
+
+function verNotinha(){
+echo '<script>
+var nota = parseInt (prompt('Escreve a nota aí'));
+	while (nota >10 || nota <0){
+		var nota = parseInt (prompt('Nota inválida. Escreve de novo.'));
+
+  	if (nota <=10 && nota >=0 ){
+		alert ('nota válida');
+	}
+	}
+
+	if (nota <=10 && nota >=0 ){
+		alert ('nota válida');
+	}</script>'
 }
 
 
