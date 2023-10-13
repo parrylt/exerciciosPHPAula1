@@ -171,20 +171,17 @@ if ($_GET) {
 }}
 
 
-function verNotinha(){
-echo '<script>
-var nota = parseInt (prompt('Escreve a nota aí'));
-	while (nota >10 || nota <0){
-		var nota = parseInt (prompt('Nota inválida. Escreve de novo.'));
-
-  	if (nota <=10 && nota >=0 ){
-		alert ('nota válida');
-	}
-	}
-
-	if (nota <=10 && nota >=0 ){
-		alert ('nota válida');
-	}</script>'
+function verNotinha()
+{
+    echo '<script>
+    var nota = parseInt(prompt("Escreva a nota aí"));
+    while (nota > 10 || nota < 0) {
+        nota = parseInt(prompt("Nota inválida. Escreva de novo.");
+    }
+    if (nota <= 10 && nota >= 0) {
+        alert("Nota válida");
+    }
+    </script>';
 }
 
 
