@@ -34,6 +34,8 @@
 <h1>Exercício 3</h1>
 <p> 3)	Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.</P>
 <form method="get">
+<label for="nota">Digite uma nota entre zero e dez:</label>
+<input type="text" name="nota" id="nota">
 	<button name="botaoEx3" type="submit">Bora ver as notas!</button>
   </div>
 </form>
@@ -173,15 +175,13 @@ if ($_GET) {
 
 function verNotinha()
 {
-    echo '<script>
-    var nota = parseInt(prompt("Escreva a nota aí"));
-    while (nota > 10 || nota < 0) {
-        nota = parseInt(prompt("Nota inválida. Escreva de novo.");
-    }
-    if (nota <= 10 && nota >= 0) {
-        alert("Nota válida");
-    }
-    </script>';
+	$nota = floatval($_GET['nota']);
+	
+	if ($nota >= 0 && $nota <= 10) {
+	    echo "Nota válida: $nota";
+	} else {
+	    echo "Nota inválida. Por favor, digite uma nota entre zero e dez.";
+	}
 }
 
 
