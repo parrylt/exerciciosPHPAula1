@@ -1,5 +1,5 @@
 # exerciciosPHPaula1
-exercícios para treinar o início do aprendizado de php. tudo feito com method get
+exercícios para treinar o início do aprendizado de php. tudo feito com method get. Aula de PHP na Etec de Guarulhos.
 <br><br>
 
 <div align="center">
